@@ -1,0 +1,119 @@
+package com.monocept.controller;
+
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.monocept.dao.TransactionDbUtil;
+
+@WebServlet("/user")
+public class UserController extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+    
+    private UserController userController;
+
+	@Override
+	public void init() throws ServletException {
+		// TODO Auto-generated method stub
+		super.init();
+		userController = new UserController(dataSource);
+	}
+
+    @Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String command = request.getParameter("TransactionController");
+		System.out.println(command);
+
+		if (command == null) {
+			command = "customer-home";
+		}
+
+		switch (command) {
+
+		case "Pass Book": 
+			forwardToTransactionController(request, response, "list");
+		//	passbook(request, response,"list");
+			break;
+		
+
+		case "New Transaction": 
+			forwardToTransactionController(request, response, "newTransaction");
+			//newTransaction(request, response,"newTransaction");
+			break;
+
+		
+
+		case "Edit Profile": 
+			editProfile(request, response,"editProfile");
+			break;
+		
+
+		
+
+		default:
+			customerHome(request, response);
+		}
+
+	}
+
+	private void customerHome(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		System.out.println("Inside customer Home doGet method");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("cust-home.jsp");
+		requestDispatcher.forward(request, response);
+
+	}
+	
+//	private void passbook(HttpServletRequest request, HttpServletResponse response, String list)
+//			throws ServletException, IOException {
+//		System.out.println("Inside passbook");
+//		request.setAttribute("method", list);
+//        RequestDispatcher requestDispatcher = request.getRequestDispatcher("TransactionController");
+//        requestDispatcher.forward(request, response);
+//		
+////		RequestDispatcher requestDispatcher = request.getRequestDispatcher("passbook.jsp");
+////		requestDispatcher.forward(request, response);
+//
+//	}
+
+	private void newTransaction(HttpServletRequest request, HttpServletResponse response, String newTransaction)
+			throws ServletException, IOException {
+		System.out.println("Inside New Transaction doGet method");
+		request.setAttribute("method", newTransaction);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("TransactionController");
+        requestDispatcher.forward(request, response);
+//		RequestDispatcher requestDispatcher = request.getRequestDispatcher("new-transaction.jsp");
+//		requestDispatcher.forward(request, response);
+	}
+
+	private void editProfile(HttpServletRequest request, HttpServletResponse response, String editProfile)
+			throws ServletException, IOException {
+		System.out.println("Inside EditProfile doGet method");
+		request.setAttribute("method", editProfile);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("TransactionController");
+        requestDispatcher.forward(request, response);
+//		RequestDispatcher requestDispatcher = request.getRequestDispatcher("edit-profile.jsp");
+//		requestDispatcher.forward(request, response);
+	}
+	
+	private void forwardToTransactionController(HttpServletRequest request, HttpServletResponse response, String method)
+            throws ServletException, IOException {
+        request.setAttribute("method", method);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("TransactionController");
+        requestDispatcher.forward(request, response);
+    }
+	
+	
+
+	
+
+	
+}

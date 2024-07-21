@@ -1,0 +1,9 @@
+package com.model.monocept;
+
+public class StringUtil {
+
+	public static String toUpperCase(String str1) {
+		return str1.toUpperCase();
+		
+	}
+}

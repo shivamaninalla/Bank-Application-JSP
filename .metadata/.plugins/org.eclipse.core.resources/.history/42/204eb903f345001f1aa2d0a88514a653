@@ -1,0 +1,5 @@
+package com.monocept.dao;
+
+public class CustomersDb {
+
+}

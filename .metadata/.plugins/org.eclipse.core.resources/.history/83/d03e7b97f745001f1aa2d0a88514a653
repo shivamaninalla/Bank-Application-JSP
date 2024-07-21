@@ -1,0 +1,44 @@
+package com.monocept.dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.sql.DataSource;
+
+
+
+public class CustomersDb {
+	
+	private static DataSource dataSource;
+
+	public CustomersDb(DataSource dataSource) {
+		super();
+		this.dataSource = dataSource;
+	}
+
+	public List<Student> getStudents() throws SQLException {
+
+		List<Student> students = new ArrayList<>();
+		Connection conn = dataSource.getConnection();
+		Statement st = conn.createStatement();
+		String query = "select * from student";
+		ResultSet rs = st.executeQuery(query);
+		while (rs.next()) {
+
+			String name = rs.getString("name");
+			int percentage = rs.getInt("percentage");
+			int id = rs.getInt("id");
+
+			Student student = new Student(name, percentage, id);
+			students.add(student);
+
+		}
+		return students;
+
+	}
+
+}

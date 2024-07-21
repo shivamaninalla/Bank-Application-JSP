@@ -1,0 +1,9 @@
+package com.monocept.model;
+
+public class Student {
+	private int id;
+	private String first_name;
+	private String last_name;
+	private String email;
+
+}

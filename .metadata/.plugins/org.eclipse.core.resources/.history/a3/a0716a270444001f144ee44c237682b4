@@ -1,0 +1,39 @@
+package com.model.dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import com.model.entity.Student;
+
+public class StudentDbUtil {
+	
+	private DataSource dataSource;
+
+	public StudentDbUtil(DataSource dataSource) {
+		super();
+		this.dataSource = dataSource;
+	}
+	
+	public List<Student> getStudents() throws SQLException{
+		Connection conn=dataSource.getConnection();
+		Statement st=conn.createStatement();
+		String query="select * from student";
+		ResultSet rs = st.executeQuery(query);
+		while(rs.next()) {
+			String name=rs.getString("name");
+			int percentage=rs.getInt("percentage");
+			int id=rs.getInt("id");
+			
+			
+		}
+		
+	}
+	
+	
+
+}

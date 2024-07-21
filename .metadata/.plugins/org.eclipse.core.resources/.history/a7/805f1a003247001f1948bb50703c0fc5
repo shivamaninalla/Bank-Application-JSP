@@ -1,0 +1,33 @@
+package com.monocept.model;
+
+public class CustomerAccount {
+	private Customer customer;
+	private Accounts account;
+
+	public CustomerAccount(Customer customer, Accounts account) {
+		this.customer = customer;
+		this.account = account;
+	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+
+	public Accounts getAccount() {
+		return account;
+	}
+
+	@Override
+	public String toString() {
+		return "CustomerAccount [customer=" + customer + ", account=" + account + "]";
+	}
+
+	public void setAccount(Accounts account) {
+		this.account = account;
+	}
+
+}
