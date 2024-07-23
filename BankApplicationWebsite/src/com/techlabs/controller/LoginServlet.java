@@ -1,3 +1,4 @@
+
 package com.techlabs.controller;
 
 import java.io.IOException;
@@ -38,12 +39,12 @@ public class LoginServlet extends HttpServlet {
 		System.out.println("Email: " + emailId + ", Password: " + password + ", Role: " + userRole);
 
 		if ("Admin".equals(userRole)) {
-			if ("admin@gmail.com".equals(emailId) && "admin123".equals(password)) {
+			if (customerDbUtil.validateAdmin(emailId, password)) {
 				System.out.println("inside Admin");
 				HttpSession session = request.getSession();
 				session.setAttribute("emailId", emailId);
 				session.setAttribute("userRole", "Admin");
-				response.sendRedirect("admin"); // Redirect to AdminController
+				response.sendRedirect("admin");
 			} else {
 				response.sendRedirect("login.jsp?error=true");
 			}
@@ -53,7 +54,7 @@ public class LoginServlet extends HttpServlet {
 				HttpSession session = request.getSession();
 				session.setAttribute("emailId", emailId);
 				session.setAttribute("userRole", "User");
-				response.sendRedirect("user"); // Redirect to UserController or user home page
+				response.sendRedirect("user");
 			} else {
 				response.sendRedirect("login.jsp?error=true");
 			}

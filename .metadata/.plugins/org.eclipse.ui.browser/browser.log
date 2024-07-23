@@ -183,3 +183,44 @@ Jul 21, 2024 14:54:28.16 [40264:9516:0721/145428.165:ERROR:connection_factory_im
 Jul 21, 2024 15:42:47.85 [40264:9516:0721/154247.852:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
 Jul 21, 2024 15:50:43.42 [40264:9516:0721/155043.418:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -7
 Jul 21, 2024 15:51:29.02 [40264:9516:0721/155129.022:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+
+Jul 22, 2024 11:03:54.29 NEW SESSION
+Jul 22, 2024 11:03:54.29 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 22, 2024 11:07:02.98 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 22, 2024 12:39:01.64 [14500:22004:0722/123901.645:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 22, 2024 13:35:05.13 [14500:22004:0722/133505.132:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 22, 2024 13:36:39.10 [14500:22004:0722/133639.102:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 22, 2024 18:11:09.30 [14500:22004:0722/181109.306:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+Jul 22, 2024 18:11:09.32 [14500:22004:0722/181109.321:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+Jul 22, 2024 18:11:45.83 [14500:30844:0722/181145.830:ERROR:CONSOLE(5)] "Uncaught TypeError: Cannot read properties of undefined (reading 'addListener')", source: chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/thunk.js (5)
+Jul 22, 2024 18:11:51.80 [14500:30844:0722/181151.800:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Jul 22, 2024 18:12:32.03 [14500:30844:0722/181232.037:ERROR:CONSOLE(5)] "Uncaught TypeError: Cannot read properties of undefined (reading 'addListener')", source: chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/thunk.js (5)
+Jul 22, 2024 18:13:00.42 [14500:30844:0722/181300.424:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Jul 22, 2024 18:24:28.25 [14500:30844:0722/182428.253:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Jul 22, 2024 18:27:58.77 [14500:30844:0722/182758.776:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Jul 22, 2024 18:27:59.39 [14500:30844:0722/182759.398:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Jul 22, 2024 18:28:00.74 [14500:30844:0722/182800.749:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Jul 22, 2024 18:30:40.33 [14500:30844:0722/183040.332:ERROR:CONSOLE(5)] "Uncaught TypeError: Cannot read properties of undefined (reading 'addListener')", source: chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/thunk.js (5)
+Jul 22, 2024 18:31:09.26 [14500:30844:0722/183109.260:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Jul 22, 2024 18:33:46.62 [14500:22004:0722/183346.622:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 22, 2024 18:35:00.28 [14500:30844:0722/183500.282:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Jul 22, 2024 18:35:01.17 [14500:30844:0722/183501.174:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Jul 22, 2024 18:46:17.56 [14500:22004:0722/184617.565:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+Jul 22, 2024 18:47:06.62 [14500:22004:0722/184706.622:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 22, 2024 18:47:53.63 [14500:22004:0722/184753.632:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -118
+Jul 22, 2024 18:48:48.95 [14500:30844:0722/184848.952:ERROR:CONSOLE(5)] "Uncaught TypeError: Cannot read properties of undefined (reading 'addListener')", source: chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/thunk.js (5)
+Jul 22, 2024 18:49:15.86 [14500:30844:0722/184915.866:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Jul 22, 2024 18:49:22.55 [14500:22004:0722/184922.545:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 22, 2024 18:50:33.50 [14500:30844:0722/185033.500:ERROR:CONSOLE(5)] "Uncaught TypeError: Cannot read properties of undefined (reading 'addListener')", source: chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/thunk.js (5)
+Jul 22, 2024 18:51:09.42 [14500:30844:0722/185109.420:ERROR:CONSOLE(5)] "Uncaught TypeError: Cannot read properties of undefined (reading 'addListener')", source: chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/thunk.js (5)
+Jul 22, 2024 18:51:44.66 [14500:22004:0722/185144.665:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -7
+Jul 22, 2024 18:51:54.88 [14500:30844:0722/185154.883:ERROR:CONSOLE(5)] "Uncaught TypeError: Cannot read properties of undefined (reading 'addListener')", source: chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/thunk.js (5)
+Jul 22, 2024 18:52:22.39 [14500:30844:0722/185222.395:ERROR:CONSOLE(5)] "Uncaught TypeError: Cannot read properties of undefined (reading 'addListener')", source: chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/thunk.js (5)
+Jul 22, 2024 18:52:50.31 [14500:30844:0722/185250.313:ERROR:CONSOLE(5)] "Uncaught TypeError: Cannot read properties of undefined (reading 'addListener')", source: chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/thunk.js (5)
+Jul 22, 2024 18:53:07.26 [14500:30844:0722/185307.262:ERROR:CONSOLE(5)] "Uncaught TypeError: Cannot read properties of undefined (reading 'addListener')", source: chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/thunk.js (5)
+Jul 22, 2024 18:53:35.74 [14500:30844:0722/185335.747:ERROR:CONSOLE(5)] "Uncaught TypeError: Cannot read properties of undefined (reading 'addListener')", source: chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/thunk.js (5)
+Jul 22, 2024 18:54:59.84 [14500:22004:0722/185459.846:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -118
+Jul 22, 2024 20:10:16.48 [14500:22004:0722/201016.481:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 22, 2024 20:20:54.27 [14500:22004:0722/202054.274:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+Jul 22, 2024 20:21:08.23 [14500:30844:0722/202108.227:ERROR:CONSOLE(5)] "Uncaught TypeError: Cannot read properties of undefined (reading 'addListener')", source: chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/thunk.js (5)
+Jul 22, 2024 20:21:36.33 [14500:30844:0722/202136.333:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
